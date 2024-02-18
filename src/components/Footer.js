@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>Chantel Carter | Full-Stack Web Developer - React, Rails, JavaScript, PostgreSQL, HTML, CSS</footer>
   )
 }
 
