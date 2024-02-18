@@ -6,7 +6,8 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
-import NotFound from "./pages/NotFound"
+import NotFound from './pages/NotFound'
+import './App.css'
 
 const App = () => {
   return (
