@@ -8,5 +8,27 @@ footer {
 }
 
 .nav {
-  padding: 5px;
+  /* padding: 5px; */
+  margin: 5px;
+  text-align: right;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+}
+
+a.nav-link.active {
+  padding: 1px;
+}
+
+a.nav-link {
+  padding: 1px;
+  margin-left: 10px;;
+}
+
+a {
+  color: black !important;
 }
