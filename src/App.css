@@ -30,16 +30,26 @@ a.nav-link {
   padding: 1px;
   margin-left: 10px;
   color: white !important;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .header-text {
   color: white;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 body {
-  background-image: url('./assets/black-sand.jpg');
-  background-size: 130%;
-  background-position: 60% 20%;
+  background-image: url('./assets/black-white-swirl.jpg');
+  background-size: 200%;
+  background-position: 50% 30%;
   background-repeat: no-repeat;
   color: white !important;
+  
 }
