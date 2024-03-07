@@ -46,10 +46,28 @@ a.nav-link {
 }
 
 body {
-  background-image: url('./assets/black-white-swirl.jpg');
+  background-image: url('./assets/moody-clouds.jpg');
   background-size: 200%;
   background-position: 50% 30%;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   color: white !important;
-  
+}
+
+.home-intro {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 32px;
+  line-height: 1.0;
+  padding: 20px;
+  margin-right: 50px;
+  margin-top: 100px;
+  /* position: fixed; */
+  bottom: 10%;
+  left: 10%;
+  right: 30%;
+  top: 70%;
+}
+
+.hi-im-chantel {
+  font-size: 60px;
 }
