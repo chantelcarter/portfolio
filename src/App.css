@@ -16,7 +16,7 @@
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
-/* Move everything below to a components/pages folder */
+
 footer {
   position: fixed;
   bottom: 0;
@@ -92,6 +92,7 @@ body {
   font-size: 60px;
 }
 
+/* Projects */
 .project {
   padding: 2em;
   margin: 0 auto;
@@ -124,6 +125,7 @@ body {
 
 .project .link--icon {
   margin-left: 0.5em;
+  color: white;
 }
 
 .project-image {
