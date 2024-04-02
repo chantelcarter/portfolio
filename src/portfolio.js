@@ -1,12 +1,6 @@
 import catTinder from "./assets/cat-tinder.png"
 import perfume from "./assets/coming-soon.png"
 
-const header = {
-  // all the properties are optional - can be left empty or deleted
-  homepage: '',
-  title: 'C.'
-}
-
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Chantel Carter',
@@ -62,4 +56,4 @@ const contact = {
   email: 'carter.chantel.a@gmail.com',
 }
 
-export { header, about, projects, skills, contact }
+export { about, projects, skills, contact }

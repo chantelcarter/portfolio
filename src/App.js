@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
+import Skills from './pages/Skills'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 import './App.css'
@@ -14,8 +15,9 @@ const App = () => {
     <>
       <Header />
       <Home />
-      <About />  
       <Projects />
+      <Skills />
+      <About />  
       <Routes>
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
