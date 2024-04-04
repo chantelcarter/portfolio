@@ -135,3 +135,14 @@ body {
 .project-image:hover {
   filter: brightness(100%);
 }
+/* Header Styling */
+.title {
+  text-align: center;
+}
+
+/* Contact Styling */
+.form-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}

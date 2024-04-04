@@ -4,13 +4,12 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 
 const About = () => {
-  const {photo, name, role, description, resume, social } = about
+  const {description, resume, social } = about
 
   return (
     <div className='about center'>
-      <h2>About Me</h2>
+      <h2 className='title'>About Me</h2>
       <p className='about__desc'>{description && description}</p>
-
       <div className='about__contact center'>
         {resume && (
           <a href={resume}>
