@@ -23,17 +23,29 @@ const Contact = () => {
 
   return (
     <div>
-      <h2 className='title'>Contact</h2>
+      <h2 className='title'>Send me an email</h2>
+      <br />
       <div className='form-container'>
         <form ref={form} onSubmit={sendEmail}>
-          <label>Name</label>
-          <input type="text" name="user_name" />
-          <br />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <br />
-          <label>Message</label>
-          <textarea name="message" />
+          <div className='input-group'>
+            <input 
+            type="text"
+            name="user_name"
+            placeholder='Name'
+            className='form-input'
+          />
+          <input 
+            type="email"
+            name="user_email"
+            placeholder='Email'
+            className='form-input'
+          />
+          </div>
+          <textarea
+            name="message"
+            placeholder='Message'
+            className='form-input'
+          />
           <br />
           <input type="submit" value="Send" />
         </form>
