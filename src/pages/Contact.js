@@ -1,8 +1,9 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {
   const form = useRef();
+  const [emailSent, setEmailSent] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -14,6 +15,7 @@ const Contact = () => {
       .then(
         () => {
           console.log('SUCCESS!');
+          setEmailSent(true);
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -48,6 +50,7 @@ const Contact = () => {
           />
           <br />
           <input type="submit" value="Send" />
+          {emailSent && <p>Email sent successfully!</p>}
         </form>
       </div>
     </div>
