@@ -32,13 +32,13 @@ const Contact = () => {
           <div className='input-group'>
             <input 
             type="text"
-            name="user_name"
+            name="from_name"
             placeholder='Name'
             className='form-input'
           />
           <input 
             type="email"
-            name="user_email"
+            name="reply_to"
             placeholder='Email'
             className='form-input'
           />
