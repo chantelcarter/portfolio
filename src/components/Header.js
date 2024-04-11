@@ -1,32 +1,57 @@
-import React from 'react'
-import { Nav, NavItem } from "reactstrap"
-import { NavLink } from "react-router-dom"
+import { useState } from 'react'
+import { projects, skills, contact } from '../portfolio'
+// import { Nav, NavItem } from "reactstrap"
+// import { NavLink } from "react-router-dom"
 
 const Header = () => {
+  const [showNavList, setShowNavList] = useState(false)
+
+  const toggleNavList = () => setShowNavList(!showNavList)
+
   return (
-    <>
-      <Nav className="nav">
-        <div className='header-text'>****Under Construction****</div>
-        <div className='nav-links'>
-          <NavItem>
-            <NavLink to="/" className="nav-link">Home</NavLink>
-          </NavItem>
-          <NavItem>
-          <NavLink to="/about" className="nav-link">About Me</NavLink>
-        </NavItem>
-            <NavItem>
-              <NavLink to="/projects" className="nav-link">
-                Projects
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to="/contact" className="nav-link">
-                Contact
-              </NavLink>
-          </NavItem>
-        </div>
-      </Nav>
-    </>
+    <nav className='center nav'>
+      <div>*** Under Construction ***</div>
+      <ul
+        style={{ display: showNavList ? 'flex' : null }}
+        className='nav__list'
+      >
+        {projects.length ? (
+          <li className='nav__list-item'>
+            <a
+              href='#projects'
+              onClick={toggleNavList}
+              className='link link--nav'
+            >
+              Projects
+            </a>
+          </li>
+        ) : null}
+
+        {skills.length ? (
+          <li className='nav__list-item'>
+            <a
+              href='#skills'
+              onClick={toggleNavList}
+              className='link link--nav'
+            >
+              Skills
+            </a>
+          </li>
+        ) : null}
+
+        {contact.email ? (
+          <li className='nav__list-item'>
+            <a
+              href='#contact'
+              onClick={toggleNavList}
+              className='link link--nav'
+            >
+              Contact Me
+            </a>
+          </li>
+        ) : null}
+      </ul>
+    </nav>
   )
 }
 
