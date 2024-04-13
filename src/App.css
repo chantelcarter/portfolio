@@ -8,17 +8,28 @@ footer {
   color: white;
 }
 
-.nav {
-  /* padding: 5px; */
+nav {
+  padding: 5px;
   margin: 5px;
   text-align: right;
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   justify-content: space-between;
 }
 
-.nav-links {
+.nav-list {
   display: flex;
+  list-style-type: none !important;
+}
+
+a.link.link--nav {
+  color: white !important;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+a.link.link--nav.active {
+  text-decoration: underline;
 }
 
 a.nav-link.active {
