@@ -1,13 +1,4 @@
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  padding: 5px;
-  color: white;
-}
-
+/* Header */
 nav {
   padding: 5px;
   margin: 5px;
@@ -64,6 +55,8 @@ body {
   background-repeat: no-repeat;
   font-family: "Bebas Neue", sans-serif !important;
   color: white !important;
+  display: flex;
+  justify-content: center;
 }
 
 .home-intro {
@@ -71,8 +64,6 @@ body {
   font-size: 32px;
   line-height: 1.0;
   padding: 20px;
-  margin-right: 150px;
-  margin-top: 100px;
   /* position: fixed; */
   bottom: 10%;
   left: 10%;
@@ -132,10 +123,28 @@ body {
   text-align: center;
 }
 
+/* Skills */
+
+.skills__list {
+  max-width: 450px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills__list-item {
+  margin: 0.5em;
+}
+
 /* Contact Styling */
+
 .form-container {
   max-width: 600px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .form-input {
@@ -171,4 +180,15 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: black;
+}
+
+/* Footer */
+footer {
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  color: white;
 }
