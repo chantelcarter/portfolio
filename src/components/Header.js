@@ -13,10 +13,10 @@ const Header = () => {
       <div>*** Under Construction ***</div>
       <ul
         style={{ display: showNavList ? 'flex' : null }}
-        className='nav__list'
+        className='nav-list'
       >
         {projects.length ? (
-          <li className='nav__list-item'>
+          <li className='nav-link-item'>
             <a
               href='#projects'
               onClick={toggleNavList}
