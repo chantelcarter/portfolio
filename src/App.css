@@ -1,4 +1,9 @@
 /* Header */
+
+.header-container {
+  display: flex;
+}
+
 header {
   margin-bottom: 15px;
 }
@@ -54,6 +59,8 @@ a.nav-link {
 
 }
 
+/* Content */
+
 body {
   background-image: url('./assets/moody-clouds.jpg');
   background-size: 200%;
@@ -88,16 +95,20 @@ body {
   padding: 2em;
   margin: 0 auto;
   text-align: center;
-  box-shadow: var(--shadow);
   transition: transform 0.2s linear;
+}
+
+/* .projects__grid {
   max-width: 1100px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
   grid-gap: 2em;
-}
+} */
 
 .project__description {
   margin-top: 1em;
+  font-size: 20px;
 }
 
 .project__stack {
@@ -111,7 +122,6 @@ body {
   margin: 0.5em;
   font-weight: 500;
   font-size: 0.8rem;
-  color: var(--clr-fg-alt);
 }
 
 .project .link--icon {
@@ -146,13 +156,30 @@ body {
   margin: 0.5em;
 }
 
+/* About Me */
+
+.about {
+  flex-direction: column;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .about {
+    align-items: flex-start;
+    margin-top: 1em;
+  }
+}
+
 /* Contact Styling */
 
 .form-container {
   max-width: 600px;
+  padding: 1em;
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .form-input {
