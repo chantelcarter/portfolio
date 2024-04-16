@@ -1,4 +1,8 @@
 /* Header */
+header {
+  margin-bottom: 15px;
+}
+
 nav {
   padding: 5px;
   margin: 5px;
@@ -6,6 +10,9 @@ nav {
   align-items: flex-start;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .nav-list {
@@ -53,6 +60,7 @@ body {
   background-position: 50% 30%;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-color: black !important;
   font-family: "Bebas Neue", sans-serif !important;
   color: white !important;
   display: flex;
