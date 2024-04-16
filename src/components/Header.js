@@ -9,12 +9,22 @@ const Header = () => {
   const toggleNavList = () => setShowNavList(!showNavList)
 
   return (
-    <nav className='center nav'>
+    <header>
+      <nav className='center nav'>
       <div>*** Under Construction ***</div>
       <ul
         style={{ display: showNavList ? 'flex' : null }}
         className='nav-list'
       >
+        <li className='nav__list-item'>
+        <a
+              href='#home'
+              onClick={toggleNavList}
+              className='link link--nav'
+            >
+              Home
+            </a>
+        </li>
         {projects.length ? (
           <li className='nav-link-item'>
             <a
@@ -52,6 +62,8 @@ const Header = () => {
         ) : null}
       </ul>
     </nav>
+    </header>
+    
   )
 }
 

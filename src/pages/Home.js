@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <>
-      <div className='home-intro'>
+      <div className='home-intro' id='home'>
         {name && (
           <h1>
             Hi, I&apos;m <span className="about__name">{name}.</span>
