@@ -9,7 +9,8 @@ const Header = () => {
   const toggleNavList = () => setShowNavList(!showNavList)
 
   return (
-    <header>
+    <div className='header-container'>
+      <header>
       <nav className='center nav'>
       <div>*** Under Construction ***</div>
       <ul
@@ -63,7 +64,7 @@ const Header = () => {
       </ul>
     </nav>
     </header>
-    
+    </div>
   )
 }
 
