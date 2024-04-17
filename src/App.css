@@ -63,8 +63,9 @@ a.nav-link {
 
 body {
   background-image: url('./assets/moody-clouds.jpg');
-  background-size: 200%;
-  background-position: 50% 30%;
+  /* background-size: 200%; */
+  /* background-position: 50% 30%; */
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: black !important;
