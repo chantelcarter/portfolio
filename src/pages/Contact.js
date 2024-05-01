@@ -28,19 +28,23 @@ const Contact = () => {
       <div className='form-container'>
         <h2 className='title' id='contact'>Send me an email</h2>
         <form ref={form} onSubmit={sendEmail}>
-          <div className='input-group'>
-            <input 
-            type="text"
-            name="from_name"
-            placeholder='Name'
-            className='form-input'
-          />
-          <input 
-            type="email"
-            name="reply_to"
-            placeholder='Email'
-            className='form-input'
-          />
+          <div className='form-row'>
+            <div className='row-item-name'>
+              <input 
+                type="text"
+                name="from_name"
+                placeholder='Name'
+                className='form-input'
+              />
+            </div>
+            <div className='row-item-email'>
+              <input 
+                type="email"
+                name="reply_to"
+                placeholder='Email'
+                className='form-input'
+              />
+            </div>
           </div>
           <textarea
             name="message"
