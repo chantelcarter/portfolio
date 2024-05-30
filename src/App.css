@@ -133,7 +133,10 @@ body {
 
 .project .link--icon {
   margin-left: 0.5em;
-  color: white;
+}
+
+.link--icon {
+  color: white !important;
 }
 
 .project-image {
@@ -161,6 +164,7 @@ body {
 
 .skills__list-item {
   margin: 0.5em;
+  color: #fff !important;
 }
 
 /* About Me */
