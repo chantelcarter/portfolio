@@ -12,7 +12,7 @@ const Header = () => {
     <div className='header-container'>
       <header>
       <nav className='center nav'>
-      <div>*** Under Construction ***</div>
+      <div>Chantel Carter</div>
       <ul
         style={{ display: showNavList ? 'flex' : null }}
         className='nav-list'
