@@ -1,5 +1,5 @@
 import catTinder from "./assets/cat-tinder.png"
-import perfume from "./assets/coming-soon.png"
+import perfume from "./assets/perfume-app.png"
 
 const about = {
   // all the properties are optional - can be left empty or deleted
@@ -17,6 +17,15 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
+    name: 'Perfume App',
+    image: perfume,
+    description:
+      'A full-stack web application with complete CRUD actions. Sign up to add to our perfume collection and discover the notes of different fragrances with plenty more features to come!',
+    stack: ['React.js', 'Ruby on Rails', 'PostgreSQL'],
+    sourceCode: 'https://github.com/chantelcarter/perfume-app-frontend',
+    livePreview: 'https://perfume-app-frontend.onrender.com',
+  },
+  {
     name: 'Cat Tinder',
     image: catTinder,
     description:
@@ -24,15 +33,6 @@ const projects = [
     stack: ['React.js', 'Ruby on Rails', 'PostgreSQL'],
     sourceCode: 'https://github.com/chantelcarter/cat-tinder-frontend-cc',
     livePreview: 'https://cat-tinder-frontend-wotv.onrender.com',
-  },
-  {
-    name: 'Perfume App',
-    image: perfume,
-    description:
-      'A full-stack web application with complete CRUD actions. Sign up to add to our perfume collection and discover the notes of different fragrances with plenty more features to come!',
-    stack: ['React.js', 'Ruby on Rails', 'PostgreSQL'],
-    sourceCode: 'https://github.com/chantelcarter/perfume-app-frontend',
-    livePreview: '',
   },
 ]
 
